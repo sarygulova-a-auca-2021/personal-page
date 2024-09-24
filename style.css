@@ -1,0 +1,47 @@
+body {
+    font-family: Arial;
+}
+
+#header {
+    background-color: dimgray;
+    height: 6rem;
+    border-bottom: 0.5rem solid LightSteelBlue;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#title {
+    height: 34rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about img {
+    height: 15.5rem;
+}
+
+h3 {
+    color: LightSteelBlue;
+    width: 13rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#fav {
+    display: flex;
+    justify-content: space-evenly;
+}
