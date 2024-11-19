@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 7</title>
+        <link id="style" class="style" rel="stylesheet" href="grid3.css">
+    </head>
+    <body>
+        <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+        <!-- <img src="https://cdn.imgchest.com/files/p7bwcdqap7n.png" style="position: absolute; top: 0; left: 0; z-index: -1;" alt="KG Website Background"> -->
+        <div class="container">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">
+                <ul class="menu">
+                    <li class="world">In the world</li>
+                    <li class="society">Society</li>
+                    <li class="economy">Economy</li>
+                    <li class="sport">Sport</li>
+                    <li class="world-cup">World Cup 2022</li>
+                    <li class="safety">Safety</li>
+                    <li class="incidents">Incidents</li>
+                    <li class="no-politics">no politics</li>
+                </ul>
+            </div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+            <div class="box6">6</div>
+            <div class="box7">7</div>
+            <div class="box8">8</div>
+        </div>
+        <script>
+            function switchStyle() {
+                let style = document.querySelector('.style');
+                if (style.getAttribute('href') == 'grid3.css') {
+                    style.setAttribute('href', 'grid2.css');
+                } else {
+                    style.setAttribute('href', 'grid3.css');
+                }
+            }
+        </script>
+    </body>
+</html>
