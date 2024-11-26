@@ -1,0 +1,114 @@
+/* General Styling */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: none;
+    opacity: 1;
+    font-size: 2rem;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "logo hero hero"
+        "menu hero hero"
+        "menu flex1 flex2"
+        "menu sidebar sidebar";
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.box1 {
+    grid-area: logo;
+    text-align: center;
+}
+
+.box1 img {
+    max-width: 150px;
+}
+
+.box2 {
+    grid-area: menu;
+    background-color: #007cbb;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.box2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.box2 ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+
+.box3 {
+    grid-area: hero;
+    background-image: url('https://novosti.kg/wp-content/uploads/2024/11/avtotson-720x338.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.box3 h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box4 {
+    grid-area: flex1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.box5 {
+    grid-area: flex2;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.box6 {
+    grid-area: sidebar;
+    text-align: center;
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "menu"
+            "hero"
+            "flex1"
+            "flex2"
+            "sidebar";
+    }
+
+    .box2 ul {
+        font-size: 12px;
+    }
+}

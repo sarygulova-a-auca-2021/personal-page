@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 9</title>
+        <link rel="stylesheet" href="grid4.css" class="style">
+    </head>
+    <body>
+        <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+        <div class="container">
+            <div class="box1">
+                <img src="https://cdn.imgchest.com/files/l4nec6mjxx4.png" alt="Your Business Name">
+            </div>
+            <div class="box2">
+                <ul class="menu">
+                    <li class="world">In the world</li>
+                    <li class="society">Society</li>
+                    <li class="economy">Economy</li>
+                    <li class="sport">Sport</li>
+                    <li class="world-cup">World Cup 2022</li>
+                    <li class="safety">Safety</li>
+                    <li class="incidents">Incidents</li>
+                    <li class="no-politics">No Politics</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <h1>Body Care Nourish & Refresh</h1>
+            </div>
+            <div class="box4">Flexbox Layout 1</div>
+            <div class="box5">Flexbox Layout 2</div>
+            <div class="box6">Left Sidebar</div>
+        </div>
+        <script>
+            function switchStyle() {
+                let style = document.querySelector('.style');
+                if (style.getAttribute('href') === 'grid4.css') {
+                    style.setAttribute('href', 'grid2.css');
+                } else {
+                    style.setAttribute('href', 'grid4.css');
+                }
+            }
+        </script>
+    </body>
+</html>
